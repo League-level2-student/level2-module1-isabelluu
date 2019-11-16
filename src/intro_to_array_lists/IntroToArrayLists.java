@@ -8,11 +8,11 @@ public class IntroToArrayLists {
 		//   Don't forget to import the ArrayList class
 		ArrayList<String> ray = new ArrayList<String>();
 		//2. Add five Strings to your list
+		ray.add("h");
+		ray.add("he");
+		ray.add("hel");
+		ray.add("hell");
 		ray.add("hello");
-		ray.add("goodbye");
-		ray.add("hola");
-		ray.add("adios");
-		ray.add("ciao");
 		//3. Print all the Strings using a standard for-loop
 		for(int i = 0; i < ray.size(); i++)
 		{
@@ -36,7 +36,7 @@ public class IntroToArrayLists {
 		System.out.println("  ");
 		for(int d = ray.size()-1; d>=0; d--)
 		{
-			String e = ray.get(d);
+			String e = ray.get(d); 
 			System.out.println("String index " + d + ": " + e);
 		}
 		

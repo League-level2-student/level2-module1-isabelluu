@@ -22,7 +22,7 @@ public class GuestBook implements ActionListener {
 	private JFrame frame;
 	private JPanel panel;
 	private JButton button1;
-	private JButton button2;
+	private JButton button2; 
 	
 	public void run() {
 	
@@ -31,7 +31,6 @@ public class GuestBook implements ActionListener {
 		JPanel panel = new JPanel();
 		
 		frame.setName("Guest Book");
-		
 		button1 = createButton("Add Name");
 		button1.setPreferredSize(new Dimension(100,50));
 		button1.addActionListener(this);
@@ -68,10 +67,6 @@ public void actionPerformed(ActionEvent e) {
 	JButton buttonPressed = (JButton) e.getSource();
 	
 	ArrayList<String> name = new ArrayList<String>();
-	name.add("Bob Banders");
-	name.add("Sandy Summers");
-	name.add("Greg Ganders");
-	name.add("Donny Doners");
 	
 	String names;
 	
@@ -79,9 +74,15 @@ public void actionPerformed(ActionEvent e) {
 	{
 		names = JOptionPane.showInputDialog("Input your name");
 		name.add(names);
+		String c =name.get(0);
+		System.out.println(c);
 	}
 	
-	
+	System.out.println(name.size());
+	name.add("Bob Banders");
+	name.add("Sandy Summers");
+	name.add("Greg Ganders");
+	name.add("Donny Doners");
 	
 	if(buttonPressed == button2)
 	{
