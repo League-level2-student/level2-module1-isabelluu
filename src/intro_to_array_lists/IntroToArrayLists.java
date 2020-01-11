@@ -8,11 +8,11 @@ public class IntroToArrayLists {
 		//   Don't forget to import the ArrayList class
 		ArrayList<String> ray = new ArrayList<String>();
 		//2. Add five Strings to your list
-		ray.add("h");
-		ray.add("he");
-		ray.add("hel");
-		ray.add("hell");
-		ray.add("hello");
+		ray.add("three");
+		ray.add("two");
+		ray.add("one");
+		ray.add("nananana nananana nanana");
+		ray.add("you are the music in me");
 		//3. Print all the Strings using a standard for-loop
 		for(int i = 0; i < ray.size(); i++)
 		{

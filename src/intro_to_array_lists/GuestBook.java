@@ -25,7 +25,7 @@ public class GuestBook implements ActionListener {
 	private JButton button2; 
 	
 	public void run() {
-	
+	 
 		JFrame frame = new JFrame();
 		frame.resize(300, 100);
 		JPanel panel = new JPanel();
